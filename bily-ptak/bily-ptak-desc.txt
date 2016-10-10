@@ -1,0 +1,11 @@
+- sections:
+  - 1 intro
+  - 3x (verse + chorus)
+- intro has 8 beats, other sections 16
+- patterns:
+  - every 8 beats begin with C|C|Em7|Am (A1)
+  - second half of every 8 beats is one of three variants:
+    - F|Dm7|G|G (B1)
+    - F|F|Dm7|G (B2)
+    - F|Dm7|F|G (B3)
+  - patterns B repeat as B1, B2, B2, B3

@@ -1,0 +1,20 @@
+# intro
+A1|B1
+# verse 1
+A1|B2
+A1|B2
+# chorus
+A1|B3
+A1|B1
+# verse 2
+A1|B2
+A1|B2
+# chorus
+A1|B3
+A1|B1
+# verse 3
+A1|B2
+A1|B2
+# chorus
+A1|B3
+A1|B1
