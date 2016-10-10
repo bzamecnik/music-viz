@@ -1,0 +1,32 @@
+digraph {
+	graph [concentrate=true margin=0.2 nodesep=0.25 rankdir=LR ranksep=0.3]
+	node [fixedsize=true height=0.7 shape=circle width=0.7]
+	edge [arrowsize=0.6]
+		Am6
+		Am7
+		Em
+		Em9
+		"F#7"
+		"H4/C"
+		H7
+		"H7/4"
+		Hm7
+			Am6 -> Em9
+			Am6 -> "F#7"
+			Am6 -> "H7/4"
+			Am7 -> Em
+			Am7 -> "H4/C"
+			Am7 -> Hm7
+			Em -> Am7
+			Em -> Hm7
+			Em9 -> Am6
+			"F#7" -> "H7/4"
+			"H4/C" -> Hm7
+			H7 -> Am6
+			H7 -> Am7
+			H7 -> Em
+			"H7/4" -> H7
+			Hm7 -> Am7
+			Hm7 -> Em
+			Hm7 -> H7
+}
