@@ -83,10 +83,12 @@ digraph {
 		verse_line_B -> verse_A
 	verse_B
 		verse_line_A -> verse_B [label=4]
-	intro
-		verse_A -> intro
-	solo
-		verse_A -> solo
+	guitar_intro
+		verse_A -> guitar_intro
+	guitar_solo
+		verse_A -> guitar_solo
+	instrumental
+		verse_A -> instrumental
 	chorus_part_1_A
 		"Am6 Am6 Am6 Am6" -> chorus_part_1_A
 		"Em9 Em9 Em9 Em9" -> chorus_part_1_A
@@ -113,17 +115,17 @@ digraph {
 	ending
 		"Em Em Em Em" -> ending [label=2]
 	song
-		intro -> song
-		intro -> song
+		instrumental -> song
+		guitar_intro -> song
 		verse_A -> song
 		verse_A -> song
 		chorus_A -> song
 		verse_A -> song
 		chorus_B -> song
 		verse_B -> song
-		solo -> song
+		guitar_solo -> song
 		chorus_B -> song
 		verse_C -> song
-		solo -> song
+		instrumental -> song
 		ending -> song
 }

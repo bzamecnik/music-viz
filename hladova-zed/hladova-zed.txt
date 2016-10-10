@@ -1,10 +1,13 @@
 # kapo 3
 
-# intro 1
+# intro triangle ticks
+N|N
+
+# instrumental 1
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|H7
 
-# intro 2
+# guitar intro 2
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|H7
 
@@ -36,7 +39,7 @@ H4/C|Hm7,Am7|Em|Em
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 
-# solo 1
+# guitar solo 1
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|H7
 
@@ -58,9 +61,9 @@ Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 
-# solo 2
+# instrumental 2
 Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
 Am7,Hm7|Em,Hm7|Am7,Hm7|H7
 
 # ending
-Em|Em|Em|Em
+Em|Em
