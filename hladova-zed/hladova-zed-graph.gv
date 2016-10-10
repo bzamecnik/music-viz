@@ -1,0 +1,129 @@
+digraph {
+	node [shape=box]
+	H7
+	Am7
+	Am6
+	"H4/C"
+	Hm7
+	Em
+	"F#7"
+	"H7/4"
+	Em9
+	"Em Em"
+		Em -> "Em Em"
+		Em -> "Em Em"
+	"Am7 Am7"
+		Am7 -> "Am7 Am7"
+		Am7 -> "Am7 Am7"
+	"H7/4 H7/4"
+		"H7/4" -> "H7/4 H7/4"
+		"H7/4" -> "H7/4 H7/4"
+	"Am6 F#7"
+		Am6 -> "Am6 F#7"
+		"F#7" -> "Am6 F#7"
+	"Hm7 Am7"
+		Hm7 -> "Hm7 Am7"
+		Am7 -> "Hm7 Am7"
+	"Am6 Am6"
+		Am6 -> "Am6 Am6"
+		Am6 -> "Am6 Am6"
+	"Am7 Hm7"
+		Am7 -> "Am7 Hm7"
+		Hm7 -> "Am7 Hm7"
+	"H4/C H4/C"
+		"H4/C" -> "H4/C H4/C"
+		"H4/C" -> "H4/C H4/C"
+	"Em9 Em9"
+		Em9 -> "Em9 Em9"
+		Em9 -> "Em9 Em9"
+	"Em Hm7"
+		Em -> "Em Hm7"
+		Hm7 -> "Em Hm7"
+	"Hm7 Hm7"
+		Hm7 -> "Hm7 Hm7"
+		Hm7 -> "Hm7 Hm7"
+	"H7 H7"
+		H7 -> "H7 H7"
+		H7 -> "H7 H7"
+	"Em9 Em9 Em9 Em9"
+		"Em9 Em9" -> "Em9 Em9 Em9 Em9"
+		"Em9 Em9" -> "Em9 Em9 Em9 Em9"
+	"H4/C H4/C Hm7 Am7"
+		"H4/C H4/C" -> "H4/C H4/C Hm7 Am7"
+		"Hm7 Am7" -> "H4/C H4/C Hm7 Am7"
+	"Am7 Hm7 H7 H7"
+		"Am7 Hm7" -> "Am7 Hm7 H7 H7"
+		"H7 H7" -> "Am7 Hm7 H7 H7"
+	"Am7 Am7 Am7 Am7"
+		"Am7 Am7" -> "Am7 Am7 Am7 Am7"
+		"Am7 Am7" -> "Am7 Am7 Am7 Am7"
+	"Am7 Hm7 Em Hm7"
+		"Am7 Hm7" -> "Am7 Hm7 Em Hm7"
+		"Em Hm7" -> "Am7 Hm7 Em Hm7"
+	"Am6 Am6 Am6 F#7"
+		"Am6 Am6" -> "Am6 Am6 Am6 F#7"
+		"Am6 F#7" -> "Am6 Am6 Am6 F#7"
+	"H7/4 H7/4 H7 H7"
+		"H7/4 H7/4" -> "H7/4 H7/4 H7 H7"
+		"H7 H7" -> "H7/4 H7/4 H7 H7"
+	"Em Em Hm7 Hm7"
+		"Em Em" -> "Em Em Hm7 Hm7"
+		"Hm7 Hm7" -> "Em Em Hm7 Hm7"
+	"Am6 Am6 Am6 Am6"
+		"Am6 Am6" -> "Am6 Am6 Am6 Am6"
+		"Am6 Am6" -> "Am6 Am6 Am6 Am6"
+	"Em Em Em Em"
+		"Em Em" -> "Em Em Em Em"
+		"Em Em" -> "Em Em Em Em"
+	verse_line_A
+		"Am7 Hm7 Em Hm7" -> verse_line_A
+		"Am7 Hm7 H7 H7" -> verse_line_B
+	verse_A
+		verse_line_A -> verse_A [label=3]
+		verse_line_B -> verse_A
+	verse_B
+		verse_line_A -> verse_B [label=4]
+	intro
+		verse_A -> intro
+	solo
+		verse_A -> solo
+	chorus_part_1_A
+		"Am6 Am6 Am6 Am6" -> chorus_part_1_A
+		"Em9 Em9 Em9 Em9" -> chorus_part_1_A
+		"Am6 Am6 Am6 Am6" -> chorus_part_1_A
+		"H7/4 H7/4 H7 H7" -> chorus_part_1_A
+	chorus_part_1_B
+		"Am6 Am6 Am6 Am6" -> chorus_part_1_B
+		"Em9 Em9 Em9 Em9" -> chorus_part_1_B
+		"Am6 Am6 F#7 F#7" -> chorus_part_1_B
+		"H7/4 H7/4 H7 H7" -> chorus_part_1_B
+	chorus_part_2
+		"Em Em Hm7 Hm7" -> chorus_part_2
+		"Am7 Am7 Am7 Am7" -> chorus_part_2
+		"H4/C H4/C Hm7 Am7" -> chorus_part_2
+		"Em Em Em Em" -> chorus_part_2
+	chorus_A
+		chorus_part_1_A -> chorus_A
+		chorus_part_2 -> chorus_A
+	chorus_B
+		chorus_part_1_B -> chorus_B
+		chorus_part_2 -> chorus_B
+	verse_C
+		verse_line_A -> verse_C [label=14]
+	ending
+		"Em Em Em Em" -> ending [label=2]
+	song
+		intro -> song
+		intro -> song
+		verse_A -> song
+		verse_A -> song
+		chorus_A -> song
+		verse_A -> song
+		chorus_B -> song
+		verse_B -> song
+		solo -> song
+		chorus_B -> song
+		verse_C -> song
+		solo -> song
+		ending -> song
+}

@@ -1,0 +1,48 @@
+verse_line_A = Am7,Hm7|Em,Hm7
+verse_end = Am7,Hm7|H7
+
+verse_A = 3 * [verse_line_A] + verse_end
+verse_B = 4 * [verse_line_A]
+
+intro = verse_A
+solo = verse_A
+
+chorus_line_1 = Am6|Am6|Em9|Em9
+chorus_line_2_A = Am6|Am6|H7/4|H7
+chorus_line_2_B = Am6|Am6,F#7|H7/4|H7
+chorus_line_3 = Em|Hm7|Am7|Am7
+chorus_line_4 = H4/C|Hm7,Am7|Em|Em
+
+chorus_A = [
+  chorus_line_1,
+  chorus_line_2_A,
+  chorus_line_3,
+  chorus_line_4
+]
+
+chorus_B = [
+  chorus_line_1,
+  chorus_line_2_B,
+  chorus_line_3,
+  chorus_line_4
+]
+
+verse_C = 14 * [verse_line_A]
+
+ending = Em|Em|Em|Em
+
+song = [
+    intro,
+    intro,
+    verse_A,
+    verse_A,
+    chorus_A,
+    verse_A,
+    chorus_B,
+    verse_B
+    solo,
+    chorus_B,
+    verse_C,
+    solo,
+    ending
+]

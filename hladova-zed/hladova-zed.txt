@@ -1,0 +1,66 @@
+# kapo 3
+
+# intro 1
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# intro 2
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# verse 1
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# verse 2
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# chorus
+Am6|Am6|Em9|Em9
+Am6|Am6|H7/4|H7
+Em|Hm7|Am7|Am7
+H4/C|Hm7,Am7|Em|Em
+
+# verse 3
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# chorus
+Am6|Am6|Em9|Em9
+Am6|Am6,F#7|H7/4|H7
+Em|Hm7|Am7|Am7
+H4/C|Hm7,Am7|Em|Em
+
+# verse 4
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+
+# solo 1
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# chorus
+Am6|Am6|Em9|Em9
+Am6|Am6,F#7|H7/4|H7
+Em|Hm7|Am7|Am7
+H4/C|Hm7,Am7|Em|Em
+
+# outro
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+
+# solo 2
+Am7,Hm7|Em,Hm7|Am7,Hm7|Em,Hm7
+Am7,Hm7|Em,Hm7|Am7,Hm7|H7
+
+# ending
+Em|Em|Em|Em
