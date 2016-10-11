@@ -2,14 +2,14 @@ digraph {
 	graph [concentrate=true margin=0.2 nodesep=0.25 rankdir=LR ranksep=0.3]
 	node [fixedsize=true height=0.7 shape=circle width=0.7]
 	edge [arrowsize=0.6]
-		0 [color="0.447464, 0.474227, 0.760784" style=filled]
-		1 [color="0.047140, 0.605219, 0.981315" style=filled]
-		2 [color="0.616461, 0.303572, 0.795955" style=filled]
 		3 [color="0.897074, 0.400017, 0.903114" style=filled]
 		4 [color="0.228786, 0.612469, 0.847090" style=filled]
-		5 [color="0.136423, 0.814864, 0.998631" style=filled]
+		0 [color="0.447464, 0.474227, 0.760784" style=filled]
+		1 [color="0.047140, 0.605219, 0.981315" style=filled]
 		6 [color="0.098765, 0.350451, 0.895732" style=filled]
 		7 [color="0.000000, 0.000000, 0.701961" style=filled]
+		2 [color="0.616461, 0.303572, 0.795955" style=filled]
+		5 [color="0.136423, 0.814864, 0.998631" style=filled]
 			0 -> 1
 			0 -> 2
 			1 -> 6

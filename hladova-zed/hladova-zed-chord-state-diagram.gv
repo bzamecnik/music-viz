@@ -1,16 +1,16 @@
 digraph {
-	graph [colorscheme=paired9 concentrate=true margin=0.2 nodesep=0.25 rankdir=LR ranksep=0.3]
+	graph [concentrate=true rankdir=LR]
 	node [fixedsize=true height=0.7 shape=circle width=0.7]
 	edge [arrowsize=0.6]
-		Am6 [color="0.447464, 0.474227, 0.760784" style=filled]
 		Am7 [color="0.053934, 0.545932, 0.916724" style=filled]
-		Em [color="0.761791, 0.124472, 0.695963" style=filled]
-		Em9 [color="0.834160, 0.263164, 0.777163" style=filled]
-		"F#7" [color="0.112061, 0.301766, 0.774933" style=filled]
-		"H4/C" [color="0.184241, 0.678869, 0.848597" style=filled]
-		H7 [color="0.131490, 0.700242, 0.972411" style=filled]
-		"H7/4" [color="0.098765, 0.311125, 0.868820" style=filled]
 		Hm7 [color="0.000000, 0.000000, 0.701961" style=filled]
+		Em [color="0.761791, 0.124472, 0.695963" style=filled]
+		H7 [color="0.131490, 0.700242, 0.972411" style=filled]
+		Am6 [color="0.447464, 0.474227, 0.760784" style=filled]
+		Em9 [color="0.834160, 0.263164, 0.777163" style=filled]
+		"H7/4" [color="0.098765, 0.311125, 0.868820" style=filled]
+		"H4/C" [color="0.184241, 0.678869, 0.848597" style=filled]
+		"F#7" [color="0.112061, 0.301766, 0.774933" style=filled]
 			Am6 -> Em9
 			Am6 -> "F#7"
 			Am6 -> "H7/4"
