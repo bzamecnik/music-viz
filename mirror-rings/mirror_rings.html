@@ -2,6 +2,10 @@
 
 <head>
   <style>
+    body {
+      background: #666;
+    }
+
     .node circle {
       fill: #eee;
       stroke: gray;
@@ -13,27 +17,27 @@
     }
 
     .inside circle, .inside.edge {
-      stroke: #9d9;
-      fill: #efe;
+      stroke: hsl(120, 25%, 75%);
+      fill: hsl(120, 10%, 50%);
     }
     .inside text {
-      fill: #060;
+      fill: hsl(120, 25%, 75%);
     }
 
     .outside circle, .outside.edge {
-      stroke: #d99;
-      fill: #fee;
+      stroke: hsl(0, 25%, 75%);
+      fill: hsl(0, 10%, 50%);
     }
     .outside text {
-      fill: #600;
+      fill: hsl(0, 25%, 75%);
     }
 
     .between circle, .between.edge {
-      stroke: #dc9;
-      fill: #fafaea;
+      stroke: hsl(50, 25%, 75%);
+      fill: hsl(50, 10%, 50%);
     }
     .between text {
-      fill: #660;
+      fill: hsl(50, 25%, 75%);
     }
 
     .node text {
