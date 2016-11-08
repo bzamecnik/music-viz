@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <style>
+    .node circle {
+      fill: #eee;
+      stroke: gray;
+      stroke-width: 5;
+    }
+    .edge {
+      stroke: gray;
+      stroke-width: 5;
+    }
+
+    .inside circle, .inside.edge {
+      stroke: #9d9;
+      fill: #efe;
+    }
+    .inside text {
+      fill: #060;
+    }
+
+    .outside circle, .outside.edge {
+      stroke: #d99;
+      fill: #fee;
+    }
+    .outside text {
+      fill: #600;
+    }
+
+    .between circle, .between.edge {
+      stroke: #dc9;
+      fill: #fafaea;
+    }
+    .between text {
+      fill: #660;
+    }
+
+    .node text {
+      text-anchor: middle;
+      alignment-baseline: middle;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <svg class="chart">
+    </svg>
+
+<svg class="chart"></svg>
+<script src="d3.v3.min.js" charset="utf-8"></script>
+<script>
+    var chart = d3.select(".chart")
+      .attr("width", 900)
+      .attr("height", 600);
+
+    var radius = 40;
+    var step = 3 * radius;
+
+    var pcs = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+
+    // nodes:
+    // grid X, grid Y, class
+    var nodes = [
+        [0, 0, 'inside', 0],
+        [1, 0, 'inside', 9],
+        [2, 0, 'between', 5],
+        [3, 0, 'outside', 1],
+        [4, 0, 'outside', 10],
+        [1, 1, 'inside', 2],
+        [3, 1, 'outside', 8],
+        [0, 2, 'inside', 4],
+        [1, 2, 'inside', 7],
+        [2, 2, 'between', 11],
+        [3, 2, 'outside', 3],
+        [4, 2, 'outside', 6]
+      ];
+    var edges = [
+      [0, 0, 1, 0, 'inside'],
+      [1, 0, 2, 0, 'inside'],
+      [2, 0, 3, 1, 'outside'],
+      [3, 1, 2, 2, 'outside'],
+      [2, 2, 1, 1, 'inside'],
+      [1, 1, 2, 0, 'inside'],
+      [2, 0, 3, 0, 'outside'],
+      [3, 0, 4, 0, 'outside'],
+      [4, 0, 4, 2, 'outside'],
+      [4, 2, 3, 2, 'outside'],
+      [3, 2, 2, 2, 'outside'],
+      [2, 2, 1, 2, 'inside'],
+      [1, 2, 0, 2, 'inside'],
+      [0, 2, 0, 0, 'inside']
+    ]
+
+    chart.selectAll(".edge")
+      .data(edges)
+      .enter()
+      .append("line")
+      .attr("x1", function(d, i) {
+        return (d[0] + 0.5) * step;
+      })
+      .attr("y1", function(d, i) {
+        return (d[1] + 0.5) * step;
+      })
+      .attr("x2", function(d, i) {
+        return (d[2] + 0.5) * step;
+      })
+      .attr("y2", function(d, i) {
+        return (d[3] + 0.5) * step;
+      })
+      .attr("class", function(d,i) {
+        return "edge " + d[4];
+      });
+
+    var nodeContainers = chart.selectAll(".node")
+      .data(nodes)
+      .enter()
+      .append("g")
+      .attr("class", function(d,i) {
+        return "node " + d[2];
+      })
+      .attr("transform", function(d, i) {
+        var x = (d[0] + 0.5) * step;
+        var y = (d[1] + 0.5) * step;
+        return "translate(" + x + ", " + y + ")";
+      });
+    nodeContainers.append("circle")
+      .attr("r", radius);
+    nodeContainers.append("text")
+      .text(function(d,i) {
+        return pcs[(d[3]) % 12];
+      });
+
+</script>
+</body>
+<html>
