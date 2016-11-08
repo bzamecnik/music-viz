@@ -65,18 +65,18 @@
     // nodes:
     // grid X, grid Y, class
     var nodes = [
-        [0, 0, 'inside', 0],
-        [1, 0, 'inside', 9],
-        [2, 0, 'between', 5],
-        [3, 0, 'outside', 1],
-        [4, 0, 'outside', 10],
-        [1, 1, 'inside', 2],
-        [3, 1, 'outside', 8],
-        [0, 2, 'inside', 4],
-        [1, 2, 'inside', 7],
-        [2, 2, 'between', 11],
-        [3, 2, 'outside', 3],
-        [4, 2, 'outside', 6]
+        [0, 0, 'inside'],
+        [3, 0, 'outside'],
+        [1, 1, 'inside'],
+        [3, 2, 'outside'],
+        [0, 2, 'inside'],
+        [2, 0, 'between'],
+        [4, 2, 'outside'],
+        [1, 2, 'inside'],
+        [3, 1, 'outside'],
+        [1, 0, 'inside'],
+        [4, 0, 'outside'],
+        [2, 2, 'between']
       ];
     var edges = [
       [0, 0, 1, 0, 'inside'],
@@ -131,7 +131,7 @@
       .attr("r", radius);
     nodeContainers.append("text")
       .text(function(d,i) {
-        return pcs[(d[3]) % 12];
+        return pcs[i % 12];
       });
 
 </script>
