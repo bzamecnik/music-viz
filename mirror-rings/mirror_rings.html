@@ -17,27 +17,48 @@
     }
 
     .inside circle, .inside.edge {
-      stroke: hsl(120, 25%, 75%);
-      fill: hsl(120, 10%, 50%);
+      stroke: hsl(100, 10%, 30%);
+      fill: hsl(100, 10%, 40%);
     }
     .inside text {
-      fill: hsl(120, 25%, 75%);
+      fill: hsl(100, 10%, 30%);
+    }
+    .inside.active circle {
+      stroke: hsl(100, 20%, 70%);
+      fill: hsl(100, 20%, 45%);
+    }
+    .inside.active text {
+      fill: hsl(100, 20%, 70%);
     }
 
     .outside circle, .outside.edge {
-      stroke: hsl(0, 25%, 75%);
-      fill: hsl(0, 10%, 50%);
+      stroke: hsl(0, 10%, 30%);
+      fill: hsl(0, 10%, 40%);
     }
     .outside text {
-      fill: hsl(0, 25%, 75%);
+      fill: hsl(0, 10%, 30%);
+    }
+    .outside.active circle {
+      stroke: hsl(0, 20%, 70%);
+      fill: hsl(0, 20%, 45%);
+    }
+    .outside.active text {
+      fill: hsl(0, 20%, 70%);
     }
 
     .between circle, .between.edge {
-      stroke: hsl(50, 25%, 75%);
-      fill: hsl(50, 10%, 50%);
+      stroke: hsl(50, 10%, 30%);
+      fill: hsl(50, 10%, 40%);
     }
     .between text {
-      fill: hsl(50, 25%, 75%);
+      fill: hsl(50, 10%, 30%);
+    }
+    .between.active circle {
+      stroke: hsl(50, 20%, 70%);
+      fill: hsl(50, 20%, 45%);
+    }
+    .between.active text {
+      fill: hsl(50, 20%, 70%);
     }
 
     .node text {
@@ -75,7 +96,9 @@
       [0.25, 0.5], [2.9, 0], [1.5, 1], [2.9, 2], [0.25, 1.5], [2, 0.25],
       [3.75, 1.5], [1.1, 2], [2.5, 1], [1.1, 0], [3.75, 0.5], [2, 1.75]
     ];
-    var nodeLayout = blockLayout;
+    var nodeLayout = circularLayout;
+
+    var activeNodes = [0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1];
 
     // nodes:
     // grid X, grid Y, class
@@ -140,7 +163,7 @@
       .enter()
       .append("g")
       .attr("class", function(d,i) {
-        return "node " + d[0];
+        return "node " + d[0] + " " + (activeNodes[i] ? "active" : "");
       })
       .attr("transform", function(d, i) {
         var x = gridPosition(nodeLayout[i][0]);
