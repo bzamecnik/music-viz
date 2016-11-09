@@ -159,16 +159,24 @@
       });
 
     var nodeContainers = chart.selectAll(".node")
-      .data(nodes)
-      .enter()
+      .data(activeNodes);
+    nodeContainers.enter()
       .append("g")
       .attr("class", function(d,i) {
-        return "node " + d[0] + " " + (activeNodes[i] ? "active" : "");
+        return "node " + nodes[i][0] + " " + (d ? "active" : "");
       })
       .attr("transform", function(d, i) {
         var x = gridPosition(nodeLayout[i][0]);
         var y = gridPosition(nodeLayout[i][1]);
         return "translate(" + x + ", " + y + ")";
+      })
+      .on("click", function(d, i) {
+        activeNodes[i] = !activeNodes[i];
+        chart.selectAll(".node")
+        .data(activeNodes)
+        .attr("class", function(d,i) {
+          return "node " + nodes[i][0] + " " + (d ? "active" : "");
+        })
       });
     nodeContainers.append("circle")
       .attr("r", radius);
